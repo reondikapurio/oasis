@@ -86,9 +86,11 @@ li{
 /*以上へっだーーーーー*/
 main{
     display: flex;
+    background-color: #efefef;
 
 }
 .main-wrapper1{
+    background-color: #fff;
     border:solid;
     border-radius: 7px;
     border-color: rgba(255, 68, 0, 0.5);
@@ -97,6 +99,7 @@ main{
     width:77%;
 }
 .main-wrapper2{
+    background-color: #fff;
     border:solid;
     border-radius: 7px;
     border-color: rgba(255, 68, 0, 0.5);
