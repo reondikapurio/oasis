@@ -9,11 +9,14 @@ body{
     font-size: 0.875rem;
     min-height:100vh;
     position: relative;
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 700;
+    font-style: normal;
 }
+
 a{
-    color:#333;
-    text-decoration: none;
     transition:all 0.5s;
+    text-decoration: none;
 }
 a:hover{
     opacity:0.7;
@@ -27,35 +30,83 @@ li{
 .wrapper{
     width: 100%;
     max-width: 1360px;
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0 40px;
 }
-.page-title{
-    font-size: 0.875rem;
-    font-weight: normal;
-    margin-bottom: 30px;
-}
+
+/*headerかんんれんんん*/
+
 #header{
   width: 100%;
   height: 80px;
-  background-color: #b9680a;
+  background-color: #fff;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  position: fixed;
-  top:0;
-  left: 0;
-  right: 0;
-  z-index: 10
+  position: relative;
+  border-bottom: solid rgba(255, 68, 0, 0.5);
 }
+.site-title #title{
+    text-align: left;
+    font-size: 30px;
+    color: orangered;
+    text-shadow: 3px 3px 3px #333;
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 #navi a {
-    color:aquamarine;
+    color:gray;
 }
 /*この辺にハンバーガーメニューcsscode置きたい*/
-#navi li {
-    margin-bottom: 14px;
+#navi ul{
+    display:flex;   
+    
 }
-/**/
+#navi li {
+    width:25vw;
+    height:100%;
+    font-size:large;
+    text-align:center;
+    font-size:25px;
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+#navi{
+    width: 75vw;
+    height:80%;
+}
+.nav-menu{
+    height:100%;
+}
+/*以上へっだーーーーー*/
+main{
+    display: flex;
+
+}
+.main-wrapper1{
+    border:solid;
+    border-radius: 7px;
+    border-color: rgba(255, 68, 0, 0.5);
+    margin:5vh 3vw;
+    padding: 0px 2px;
+    width:77%;
+}
+.main-wrapper2{
+    border:solid;
+    border-radius: 7px;
+    border-color: rgba(255, 68, 0, 0.5);
+    margin:5vh 3vw;
+    padding: 0px 2px;
+    width:23%;
+}
+.page-title{
+    margin-bottom: 30px;
+}
 .album-list{
     display: grid;
      grid-template-columns: repeat(4, 1fr);
@@ -67,7 +118,4 @@ li{
 }
 .album-list p{
     font-size: 0.75rem;
-}
-.content-wrapper{
-    margin-top: 100px;
 }
