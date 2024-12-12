@@ -67,20 +67,22 @@ li{
 }
 /*この辺にハンバーガーメニューcsscode置きたい*/
 #navi ul{
-
+    margin-top:0;
     display: flex;
     height:100%;
     padding:0;
 
+
 }
 #navi li {
     height:100%;
-
+    line-height:25vh;
     text-align:center;
     font-size:0.875rem;
     font-family: "M PLUS Rounded 1c", serif;
     font-weight: 700;
     font-style: normal;
+    width:25vw
 
 }
 
