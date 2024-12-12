@@ -29,16 +29,16 @@ li{
 }
 .wrapper{
     width: 100%;
-    max-width: 1360px;
+    max-width: 100vw;
     margin: 0 ;
-    padding: 0 40px;
+    padding: 0 ;
 }
 
 /*headerかんんれんんん*/
 
 #header{
   width: 100%;
-  height: 80px;
+  height: 15vh;
   background-color: #fff;
   display: flex;
   flex-direction: row;
@@ -47,41 +47,45 @@ li{
   border-bottom: solid rgba(255, 68, 0, 0.5);
 }
 .site-title #title{
+    width:20vw;
     text-align: left;
-    font-size: 30px;
+    font-size: 2rem;
     color: orangered;
     text-shadow: 3px 3px 3px #333;
     font-family: "M PLUS Rounded 1c", serif;
     font-weight: 700;
     font-style: normal;
-}
 
+}
+#navi{
+    width: 70vw;
+    height:100%;
+
+}
 #navi a {
     color:gray;
 }
 /*この辺にハンバーガーメニューcsscode置きたい*/
 #navi ul{
-    display:flex;   
-    
+
+    display: flex;
+    height:100%;
+    padding:0;
+
 }
 #navi li {
-    width:25vw;
     height:100%;
-    font-size:large;
+
     text-align:center;
-    font-size:25px;
+    font-size:0.875rem;
     font-family: "M PLUS Rounded 1c", serif;
     font-weight: 700;
     font-style: normal;
 
 }
 
-#navi{
-    width: 75vw;
-    height:80%;
-}
-.nav-menu{
-    height:100%;
+.toggle_btn{
+    width:10vw;
 }
 /*以上へっだーーーーー*/
 main{
@@ -89,32 +93,64 @@ main{
     background-color: #efefef;
 
 }
+@media screen and (max-width: 480px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        background-color: #efefef;
+
+    }
+
+}
 .main-wrapper1{
     background-color: #fff;
     border:solid;
     border-radius: 7px;
     border-color: rgba(255, 68, 0, 0.5);
-    margin:5vh 3vw;
-    padding: 0px 2px;
+    margin:5vh 3vw ;
+    padding: 0 2px;
     width:77%;
 }
+@media screen and (max-width: 480px) {
+    .main-wrapper1{
+        margin:5vh 0 ;
+        width:100%;
+    }
+}
+
 .main-wrapper2{
     background-color: #fff;
     border:solid;
     border-radius: 7px;
     border-color: rgba(255, 68, 0, 0.5);
-    margin:5vh 3vw;
-    padding: 0px 2px;
+    margin:5vh 0;
+    padding: 0 2px;
     width:23%;
 }
+@media screen and (max-width: 480px) {
+    .main-wrapper2{
+        width:100%;
+    }
+}
+
 .page-title{
-    margin-bottom: 30px;
+    margin-bottom: 3vh;
+    font-size:1.25rem;
 }
 .album-list{
     display: grid;
-     grid-template-columns: repeat(4, 1fr);
-     gap: 35px;
+    padding:0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh 3vw;
 }
+@media screen and (max-width: 480px) {
+    .album-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vh 3vw;
+    }
+}
+
 .album-list img{
     margin-bottom: 10px;
     vertical-align:top;
